@@ -16,16 +16,24 @@ const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJS']
 // tecnologias.shift()       // elimina del Inicio
 // tecnologias.splice(2, 1)  // Elimina una posicion en especifica
 
-nuevoArraay = tecnologias.filter( function(tech) {
-    return tech !== 'HTML' // Trar todos excepto 
-})
-
+// nuevoArraay = tecnologias.filter( function(tech) {
+//     return tech !== 'HTML' // Trar todos excepto 
+// })
 
 
 //? Modificar elementos del Array
+tecnologias[0] = 'GraphQl'
+
+const nuevoArray = tecnologias.map( function(tech){
+    if(tech === 'HTML'){
+        return 'GraphQl'
+    }else {
+        return tech
+    }
+} )
 
 
 console.table(tecnologias);
-console.table(nuevoArraay);
+console.table(nuevoArray);
 
 
