@@ -1,12 +1,3 @@
-// Funciones -Function Declaration
-
-function sumar() {
-    console.log(2 + 2);
-}
-
-
-sumar()
-
 // Funciones
 
 function sumar(numero = 0, numero2 = 0) {
