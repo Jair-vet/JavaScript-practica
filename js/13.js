@@ -1,10 +1,11 @@
-// Funciones
+// Function Expression
+// La diferencia es que las variables no se registran en la fase de creación
+// Hasta la fase de ejecusión , por eso el llamado debe de ir despues de la 
+// declaracion de la funcion
 
-function sumar(numero = 0, numero2 = 0) {
-    return [numero - numero2, 'Hola mundo']
+
+const sumar = function(numero = 0, numero2 = 0){
+    console.log( numero + numero2);
 }
 
-
-const [resultado, holaMundo] = sumar(100, 30)
-
-console.log(resultado, holaMundo);
+sumar(20, 90)
