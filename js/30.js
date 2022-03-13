@@ -15,7 +15,7 @@ const url = "https://jsonplaceholder.typicode.com/comments"
 //     })
 // }
 
-const consultarApi = async () => {
+const consultarApi  = async () => {
     const respuesta = await fetch(url)
     const resultado = await respuesta.json()
 
